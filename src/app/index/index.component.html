@@ -1,0 +1,22 @@
+<mat-sidenav-container>
+  <mat-sidenav #sidenav [mode]="'over'">
+    <mat-nav-list>
+      <mat-list-item>
+        <app-location-search></app-location-search>
+      </mat-list-item>
+      <div class="settings-section">
+        <a mat-list-item routerLink="/settings">
+          <mat-icon matListIcon>settings</mat-icon>
+          Settings
+        </a>
+        <a mat-list-item routerLink="/about">
+          <mat-icon matListIcon>info</mat-icon>
+          About
+        </a>
+      </div>
+    </mat-nav-list>
+  </mat-sidenav>
+  <mat-sidenav-content>
+    <app-toolbar [sidenav]="sidenav"></app-toolbar>
+  </mat-sidenav-content>
+</mat-sidenav-container>

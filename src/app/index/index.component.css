@@ -1,0 +1,15 @@
+.mat-sidenav-container {
+    height: 100%;
+}
+
+.mat-sidenav {
+    width: 250px;
+}
+
+.mat-nav-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    box-sizing: border-box;
+}
