@@ -54,11 +54,6 @@
       "sizes": "512x512",
       "type": "image/png",
       "purpose": "maskable any"
-    },
-    {
-      "src": "assets/icons/favicon.svg",
-      "type": "image/svg+xml",
-      "purpose": "maskable any"
     }
   ]
 }
