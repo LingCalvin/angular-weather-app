@@ -1,7 +1,7 @@
 {
   "configVersion": 1,
-  "timestamp": 1593743093386,
-  "index": "/angular-weather-app/index.html",
+  "timestamp": 1593767209787,
+  "index": "/index.html",
   "assetGroups": [
     {
       "name": "app",
@@ -11,12 +11,12 @@
         "ignoreVary": true
       },
       "urls": [
-        "/angular-weather-app/index.html",
-        "/angular-weather-app/main.a245f7b5bba6610df8b7.js",
-        "/angular-weather-app/manifest.webmanifest",
-        "/angular-weather-app/polyfills.a4021de53358bb0fec14.js",
-        "/angular-weather-app/runtime.e227d1a0e31cbccbf8ec.js",
-        "/angular-weather-app/styles.9003c378c80da1b2f7b4.css"
+        "/index.html",
+        "/main.ba1194e056d91374a546.js",
+        "/manifest.webmanifest",
+        "/polyfills.a4021de53358bb0fec14.js",
+        "/runtime.e227d1a0e31cbccbf8ec.js",
+        "/styles.9003c378c80da1b2f7b4.css"
       ],
       "patterns": []
     },
@@ -28,36 +28,36 @@
         "ignoreVary": true
       },
       "urls": [
-        "/angular-weather-app/assets/icons/favicon.svg",
-        "/angular-weather-app/assets/icons/icon-128x128.png",
-        "/angular-weather-app/assets/icons/icon-144x144.png",
-        "/angular-weather-app/assets/icons/icon-152x152.png",
-        "/angular-weather-app/assets/icons/icon-192x192.png",
-        "/angular-weather-app/assets/icons/icon-384x384.png",
-        "/angular-weather-app/assets/icons/icon-512x512.png",
-        "/angular-weather-app/assets/icons/icon-72x72.png",
-        "/angular-weather-app/assets/icons/icon-96x96.png"
+        "/assets/icons/favicon.svg",
+        "/assets/icons/icon-128x128.png",
+        "/assets/icons/icon-144x144.png",
+        "/assets/icons/icon-152x152.png",
+        "/assets/icons/icon-192x192.png",
+        "/assets/icons/icon-384x384.png",
+        "/assets/icons/icon-512x512.png",
+        "/assets/icons/icon-72x72.png",
+        "/assets/icons/icon-96x96.png"
       ],
       "patterns": []
     }
   ],
   "dataGroups": [],
   "hashTable": {
-    "/angular-weather-app/assets/icons/favicon.svg": "61d1123fffddf05d3d8b486bb3f9ec52a932fe03",
-    "/angular-weather-app/assets/icons/icon-128x128.png": "41965aa3cba8227b4117e4948bfe0394b83c01d2",
-    "/angular-weather-app/assets/icons/icon-144x144.png": "5042f5c3129d4ec751851c9536b5d6015980e042",
-    "/angular-weather-app/assets/icons/icon-152x152.png": "b71b27dd7aadbf70efc68f7bf4993c2cd374a5fc",
-    "/angular-weather-app/assets/icons/icon-192x192.png": "a2a78f3a2c1617c4f4e54efafe43c3fceb461cbc",
-    "/angular-weather-app/assets/icons/icon-384x384.png": "c0cf545878b7b334eac97d6c8c7445d547d6b73f",
-    "/angular-weather-app/assets/icons/icon-512x512.png": "25e7957dd65d0c4b11b6e30200c1abe37682d414",
-    "/angular-weather-app/assets/icons/icon-72x72.png": "30a8ec519b4ae4f7e46d860cce8da0f433105845",
-    "/angular-weather-app/assets/icons/icon-96x96.png": "0c669e8b6a79f277686430d9e62a260013d13fc7",
-    "/angular-weather-app/index.html": "d8773e2e408be659b9c8faa792d1ccd84b1bcd01",
-    "/angular-weather-app/main.a245f7b5bba6610df8b7.js": "e5c8607be91ec770f0a019b8c90ae5e2589b401c",
-    "/angular-weather-app/manifest.webmanifest": "86524a8a3d861966edcbd48ca848bb3efff6efaa",
-    "/angular-weather-app/polyfills.a4021de53358bb0fec14.js": "b47435a9ef2a4829f2f9dfd35599bde3614981b1",
-    "/angular-weather-app/runtime.e227d1a0e31cbccbf8ec.js": "a9aafcf49f49145093fc831efd9b8e2f6c71bb9c",
-    "/angular-weather-app/styles.9003c378c80da1b2f7b4.css": "2e879b687db0bc41dbfa0a4d15efe29721287c21"
+    "/assets/icons/favicon.svg": "61d1123fffddf05d3d8b486bb3f9ec52a932fe03",
+    "/assets/icons/icon-128x128.png": "41965aa3cba8227b4117e4948bfe0394b83c01d2",
+    "/assets/icons/icon-144x144.png": "5042f5c3129d4ec751851c9536b5d6015980e042",
+    "/assets/icons/icon-152x152.png": "b71b27dd7aadbf70efc68f7bf4993c2cd374a5fc",
+    "/assets/icons/icon-192x192.png": "a2a78f3a2c1617c4f4e54efafe43c3fceb461cbc",
+    "/assets/icons/icon-384x384.png": "c0cf545878b7b334eac97d6c8c7445d547d6b73f",
+    "/assets/icons/icon-512x512.png": "25e7957dd65d0c4b11b6e30200c1abe37682d414",
+    "/assets/icons/icon-72x72.png": "30a8ec519b4ae4f7e46d860cce8da0f433105845",
+    "/assets/icons/icon-96x96.png": "0c669e8b6a79f277686430d9e62a260013d13fc7",
+    "/index.html": "5cd54f21d914e3885fbd489462f0e1aea881bb29",
+    "/main.ba1194e056d91374a546.js": "bad7dfa7c428d7f84d70dd8a98da0a2f8a8a704b",
+    "/manifest.webmanifest": "86524a8a3d861966edcbd48ca848bb3efff6efaa",
+    "/polyfills.a4021de53358bb0fec14.js": "b47435a9ef2a4829f2f9dfd35599bde3614981b1",
+    "/runtime.e227d1a0e31cbccbf8ec.js": "a9aafcf49f49145093fc831efd9b8e2f6c71bb9c",
+    "/styles.9003c378c80da1b2f7b4.css": "2e879b687db0bc41dbfa0a4d15efe29721287c21"
   },
   "navigationUrls": [
     {
