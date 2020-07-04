@@ -1,6 +1,8 @@
 export interface ForecastBlock {
-  dt: string;
-  temp: string;
-  windSpeed: string;
+  dt: number;
+  temp: number;
+  apparentTemperature: number;
+  windSpeed: number;
   description: string;
+  icon: string;
 }
