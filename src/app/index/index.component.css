@@ -1,15 +1,30 @@
 .mat-sidenav-container {
-    height: 100%;
+  height: 100%;
 }
 
 .mat-sidenav {
-    width: 250px;
+  width: 250px;
 }
 
 .mat-nav-list {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    height: 100%;
-    box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  box-sizing: border-box;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  max-width: 120ch;
+  width: calc(100% - 16px);
+  margin: 16px;
+}
+
+.horizontal-centering-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }

@@ -1,0 +1,22 @@
+<mat-card>
+  <mat-card-header>
+    <mat-card-title>Current Weather</mat-card-title>
+    <mat-card-subtitle>{{weather!.dt * 1000 | date:"medium"}}
+    </mat-card-subtitle>
+  </mat-card-header>
+  <mat-card-content>
+    <div>
+      <img mat-card-image-mat-card-md-image [src]="weather!.icon">
+    </div>
+    <div class="info-box">
+      <div class="temperature">
+        {{ weather!.temp | convertTemperature:'K':'F' | temperature:'F'}}
+      </div>
+      <div>Feels Like:
+        {{weather!.apparentTemperature | convertTemperature:'K':'F' | temperature:'F'}}
+      </div>
+      <div>Wind Speed: {{weather!.windSpeed}} m/s</div>
+      <div>{{weather!.description | titlecase}}</div>
+    </div>
+  </mat-card-content>
+</mat-card>

@@ -22,6 +22,12 @@ import { LocationSearchComponent } from './location-search/location-search.compo
 import { MatInputModule } from '@angular/material/input';
 import { AboutComponent } from './about/about.component';
 import { SecondaryToolbarComponent } from './secondary-toolbar/secondary-toolbar.component';
+import { MatAutocompleteModule } from '@angular/material/autocomplete';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { CurrentWeatherComponent } from './current-weather/current-weather.component';
+import { MatCardModule } from '@angular/material/card';
+import { TemperaturePipe } from './temperature.pipe';
+import { ConvertTemperaturePipe } from './convert-temperature.pipe';
 
 @NgModule({
   declarations: [
@@ -32,6 +38,9 @@ import { SecondaryToolbarComponent } from './secondary-toolbar/secondary-toolbar
     LocationSearchComponent,
     AboutComponent,
     SecondaryToolbarComponent,
+    CurrentWeatherComponent,
+    TemperaturePipe,
+    ConvertTemperaturePipe,
   ],
   imports: [
     BrowserModule,
@@ -46,6 +55,10 @@ import { SecondaryToolbarComponent } from './secondary-toolbar/secondary-toolbar
     MatListModule,
     MatDividerModule,
     MatInputModule,
+    MatAutocompleteModule,
+    FormsModule,
+    ReactiveFormsModule,
+    MatCardModule,
     ServiceWorkerModule.register('ngsw-worker.js', {
       enabled: environment.production,
     }),

@@ -2,7 +2,9 @@
   <mat-sidenav #sidenav [mode]="'over'" [autoFocus]="false">
     <mat-nav-list>
       <mat-list-item>
-        <app-location-search></app-location-search>
+        <app-location-search #locationSearch
+          (locationSelected)="sidenav.close(); onLocationSelected($event)">
+        </app-location-search>
       </mat-list-item>
       <div class="settings-section">
         <a mat-list-item routerLink="/settings">
@@ -17,6 +19,14 @@
     </mat-nav-list>
   </mat-sidenav>
   <mat-sidenav-content>
-    <app-toolbar [sidenav]="sidenav"></app-toolbar>
+    <app-toolbar [sidenav]="sidenav" [title]="title"></app-toolbar>
+    <div class="horizontal-centering-wrapper">
+      <div class="content">
+        <ng-container *ngIf="forecast$ | async; let forecast">
+          <app-current-weather [weather]="forecast.current">
+          </app-current-weather>
+        </ng-container>
+      </div>
+    </div>
   </mat-sidenav-content>
 </mat-sidenav-container>
