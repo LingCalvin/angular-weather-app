@@ -28,6 +28,8 @@ import { CurrentWeatherComponent } from './current-weather/current-weather.compo
 import { MatCardModule } from '@angular/material/card';
 import { TemperaturePipe } from './temperature.pipe';
 import { ConvertTemperaturePipe } from './convert-temperature.pipe';
+import { HourlyForecastComponent } from './hourly-forecast/hourly-forecast.component';
+import { WeatherTileComponent } from './weather-tile/weather-tile.component';
 
 @NgModule({
   declarations: [
@@ -41,6 +43,8 @@ import { ConvertTemperaturePipe } from './convert-temperature.pipe';
     CurrentWeatherComponent,
     TemperaturePipe,
     ConvertTemperaturePipe,
+    HourlyForecastComponent,
+    WeatherTileComponent,
   ],
   imports: [
     BrowserModule,

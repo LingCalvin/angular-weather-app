@@ -1,0 +1,14 @@
+.tile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.tile > img {
+  height: 70px;
+  width: 70px;
+}
+
+.apparent-temperature {
+  font-weight: lighter;
+}

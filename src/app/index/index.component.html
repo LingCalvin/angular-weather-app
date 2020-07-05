@@ -25,6 +25,8 @@
         <ng-container *ngIf="forecast$ | async; let forecast">
           <app-current-weather [weather]="forecast.current">
           </app-current-weather>
+          <app-hourly-forecast [weather]="forecast.hourly">
+          </app-hourly-forecast>
         </ng-container>
       </div>
     </div>

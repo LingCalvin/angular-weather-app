@@ -15,12 +15,12 @@
 }
 
 .content {
-  display: flex;
-  flex-direction: column;
-  gap: 18px;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 8px;
   max-width: 120ch;
-  width: calc(100% - 16px);
-  margin: 16px;
+  width: calc(100% - 12px);
+  margin: 12px;
 }
 
 .horizontal-centering-wrapper {
