@@ -1,6 +1,6 @@
 {
   "configVersion": 1,
-  "timestamp": 1593919039884,
+  "timestamp": 1593919515338,
   "index": "/angular-weather-app/index.html",
   "assetGroups": [
     {
@@ -12,7 +12,7 @@
       },
       "urls": [
         "/angular-weather-app/index.html",
-        "/angular-weather-app/main.0619e8fb3b91e6e8cfd6.js",
+        "/angular-weather-app/main.23d15aafa6449ec8fcea.js",
         "/angular-weather-app/manifest.webmanifest",
         "/angular-weather-app/polyfills.a4021de53358bb0fec14.js",
         "/angular-weather-app/runtime.e227d1a0e31cbccbf8ec.js",
@@ -52,8 +52,8 @@
     "/angular-weather-app/assets/icons/icon-512x512.png": "25e7957dd65d0c4b11b6e30200c1abe37682d414",
     "/angular-weather-app/assets/icons/icon-72x72.png": "30a8ec519b4ae4f7e46d860cce8da0f433105845",
     "/angular-weather-app/assets/icons/icon-96x96.png": "0c669e8b6a79f277686430d9e62a260013d13fc7",
-    "/angular-weather-app/index.html": "47e6d822f477e1e2a61a010106791b7f2141a7b2",
-    "/angular-weather-app/main.0619e8fb3b91e6e8cfd6.js": "5cb659116c0067cf3cf505672f20c801490d628c",
+    "/angular-weather-app/index.html": "949622b37426ba36cfc2bd043422aad3eaaa5156",
+    "/angular-weather-app/main.23d15aafa6449ec8fcea.js": "e3946b96263fe3f5d72c98b54e59b6c7d5dc785c",
     "/angular-weather-app/manifest.webmanifest": "86524a8a3d861966edcbd48ca848bb3efff6efaa",
     "/angular-weather-app/polyfills.a4021de53358bb0fec14.js": "b47435a9ef2a4829f2f9dfd35599bde3614981b1",
     "/angular-weather-app/runtime.e227d1a0e31cbccbf8ec.js": "a9aafcf49f49145093fc831efd9b8e2f6c71bb9c",
