@@ -2,9 +2,9 @@
   <div>{{weather.dt * 1000 | date:"h aa"}}</div>
   <img src="{{weather.icon}}">
   <div>
-    {{weather.temp | convertTemperature:'K':'F' | temperature:'F'}}
+    {{extractTemp(weather.temp) | convertTemperature:'K':'F' | temperature:'F'}}
   </div>
   <div class="apparent-temperature">
-    ({{weather.apparentTemperature | convertTemperature:'K':'F' | temperature:'F'}})
+    ({{extractTemp(weather.apparentTemperature) | convertTemperature:'K':'F' | temperature:'F'}})
   </div>
 </div>

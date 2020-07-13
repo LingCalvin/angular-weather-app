@@ -30,6 +30,8 @@ import { TemperaturePipe } from './temperature.pipe';
 import { ConvertTemperaturePipe } from './convert-temperature.pipe';
 import { HourlyForecastComponent } from './hourly-forecast/hourly-forecast.component';
 import { WeatherTileComponent } from './weather-tile/weather-tile.component';
+import { DailyForecastComponent } from './daily-forecast/daily-forecast.component';
+import { MatExpansionModule } from '@angular/material/expansion';
 
 @NgModule({
   declarations: [
@@ -45,6 +47,7 @@ import { WeatherTileComponent } from './weather-tile/weather-tile.component';
     ConvertTemperaturePipe,
     HourlyForecastComponent,
     WeatherTileComponent,
+    DailyForecastComponent,
   ],
   imports: [
     BrowserModule,
@@ -63,6 +66,7 @@ import { WeatherTileComponent } from './weather-tile/weather-tile.component';
     FormsModule,
     ReactiveFormsModule,
     MatCardModule,
+    MatExpansionModule,
     ServiceWorkerModule.register('ngsw-worker.js', {
       enabled: environment.production,
     }),

@@ -51,22 +51,19 @@ export class OpenweathermapService {
     response: OpenweathermapOnecallResponse
   ): ForecastBlock[] {
     const respDaily = response.daily;
-    return respDaily.map(
-      ({ weather, temp, feels_like, wind_speed, ...rest }) => {
-        return {
-          ...rest,
-          temp: temp.eve,
-          apparentTemperature: feels_like.eve,
-          description: weather[0].description,
-          windSpeed: wind_speed,
-          icon: OpenweathermapService.getIconUrl(weather[0].icon),
-        };
-      }
-    );
+    return respDaily.map(({ weather, feels_like, wind_speed, ...rest }) => {
+      return {
+        ...rest,
+        apparentTemperature: feels_like,
+        description: weather[0].description,
+        windSpeed: wind_speed,
+        icon: OpenweathermapService.getIconUrl(weather[0].icon),
+      };
+    });
   }
 
   static getIconUrl(icon: string): string {
-    return `https://openweathermap.org/img/wn/${icon}@2x.png`;
+    return `https://openweathermap.org/img/wn/${icon}@4x.png`;
   }
 
   getForecast(latitude: number, longitude: number): Observable<Forecast> {
