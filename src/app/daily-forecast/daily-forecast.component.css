@@ -24,3 +24,20 @@ img {
   justify-content: space-between;
   align-items: center;
 }
+
+.extra-info {
+  display: grid;
+  grid-template-columns: auto auto;
+  justify-items: center;
+  justify-content: center;
+  column-gap: 12px;
+}
+
+span:nth-child(2n-1) {
+  font-weight: bold;
+  justify-self: end;
+}
+
+span:nth-child(2n) {
+  justify-self: start;
+}

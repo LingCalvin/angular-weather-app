@@ -7,4 +7,14 @@ export interface ForecastBlock {
   windSpeed: number;
   description: string;
   icon: string;
+  pressure: number;
+  humidity: number;
+  dewPoint: number;
+  uvi: number;
+  clouds: number;
+  visibility: number;
+  windGust?: number;
+  windDeg: number;
+  rain?: number;
+  snow?: number;
 }

@@ -9,12 +9,28 @@
           <div>
             <ng-container
               *ngIf="extractTemperatureDict(forecast.temp); let temps">
-              {{temps.max | convertTemperature:'K':'F' | temperature:'F'}} /
-              {{temps.min | convertTemperature:'K':'F' | temperature:'F'}}
+              {{temps.max | temperature:temperatureUnit:0}} /
+              {{temps.min | temperature:temperatureUnit:0}}
             </ng-container>
           </div>
         </div>
       </div>
     </mat-expansion-panel-header>
+    <div class="extra-info">
+      <ng-container
+        *ngIf="extractTemperatureDict(forecast.apparentTemperature); let temps">
+        <span>Feels
+          Like</span><span>{{temps.day | temperature:temperatureUnit:0}}
+          /
+          {{temps.night | temperature:temperatureUnit:0}}</span>
+        <span>Wind
+          Speed</span><span>{{forecast.windSpeed | speed:speedUnit:1}}</span>
+        <span>Pressure</span><span>{{forecast.pressure | pressure:pressureUnit}}</span>
+        <span>Humidity</span><span>{{forecast.humidity}}%</span>
+        <span>Dew
+          Point</span><span>{{forecast.dewPoint | temperature:temperatureUnit:0}}</span>
+        <span>UVI</span><span>{{forecast.uvi}}</span>
+      </ng-container>
+    </div>
   </mat-expansion-panel>
 </mat-accordion>

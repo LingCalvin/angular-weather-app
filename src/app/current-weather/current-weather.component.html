@@ -10,13 +10,14 @@
     </div>
     <div class="info-box">
       <div class="temperature">
-        {{extractTemp(weather!.temp) | convertTemperature:'K':'F' | temperature:'F'}}
+        {{extractTemp(weather.temp) | temperature:temperatureUnit:0}}
       </div>
       <div>Feels Like:
-        {{extractTemp(weather!.apparentTemperature) | convertTemperature:'K':'F' | temperature:'F'}}
+        {{extractTemp(weather.apparentTemperature) | temperature:temperatureUnit:0}}
       </div>
-      <div>Wind Speed: {{weather!.windSpeed}} m/s</div>
-      <div>{{weather!.description | titlecase}}</div>
+      <div>Wind Speed: {{weather.windSpeed | speed:speedUnit:1}}
+      </div>
+      <div>{{weather.description | titlecase}}</div>
     </div>
   </mat-card-content>
 </mat-card>
