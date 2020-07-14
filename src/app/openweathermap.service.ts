@@ -22,44 +22,82 @@ export class OpenweathermapService {
     response: OpenweathermapOnecallResponse
   ): ForecastBlock {
     const respCurrent = response.current;
-    return {
-      dt: respCurrent.dt,
-      temp: respCurrent.temp,
-      apparentTemperature: respCurrent.feels_like,
-      windSpeed: respCurrent.wind_speed,
-      description: respCurrent.weather[0].description,
-      icon: OpenweathermapService.getIconUrl(respCurrent.weather[0].icon),
-    };
+    return (({
+      feels_like,
+      wind_speed,
+      wind_deg,
+      weather,
+      dew_point,
+      wind_gust,
+      ...rest
+    }) => {
+      return {
+        ...rest,
+        apparentTemperature: feels_like,
+        windSpeed: wind_speed,
+        windDeg: wind_deg,
+        description: weather[0].description,
+        icon: OpenweathermapService.getIconUrl(weather[0].icon),
+        dewPoint: dew_point,
+        windGust: wind_gust,
+      };
+    })(respCurrent);
   }
 
   static extractHourly(
     response: OpenweathermapOnecallResponse
   ): ForecastBlock[] {
     const respHourly = response.hourly;
-    return respHourly.map(({ weather, feels_like, wind_speed, ...rest }) => {
-      return {
-        ...rest,
-        apparentTemperature: feels_like,
-        description: weather[0].description,
-        windSpeed: wind_speed,
-        icon: OpenweathermapService.getIconUrl(weather[0].icon),
-      };
-    });
+    return respHourly.map(
+      ({
+        feels_like,
+        wind_speed,
+        wind_deg,
+        weather,
+        dew_point,
+        wind_gust,
+        ...rest
+      }) => {
+        return {
+          ...rest,
+          apparentTemperature: feels_like,
+          windSpeed: wind_speed,
+          windDeg: wind_deg,
+          description: weather[0].description,
+          icon: OpenweathermapService.getIconUrl(weather[0].icon),
+          dewPoint: dew_point,
+          windGust: wind_gust,
+        };
+      }
+    );
   }
 
   static extractDaily(
     response: OpenweathermapOnecallResponse
   ): ForecastBlock[] {
     const respDaily = response.daily;
-    return respDaily.map(({ weather, feels_like, wind_speed, ...rest }) => {
-      return {
-        ...rest,
-        apparentTemperature: feels_like,
-        description: weather[0].description,
-        windSpeed: wind_speed,
-        icon: OpenweathermapService.getIconUrl(weather[0].icon),
-      };
-    });
+    return respDaily.map(
+      ({
+        feels_like,
+        wind_speed,
+        wind_deg,
+        weather,
+        dew_point,
+        wind_gust,
+        ...rest
+      }) => {
+        return {
+          ...rest,
+          apparentTemperature: feels_like,
+          windSpeed: wind_speed,
+          windDeg: wind_deg,
+          description: weather[0].description,
+          icon: OpenweathermapService.getIconUrl(weather[0].icon),
+          dewPoint: dew_point,
+          windGust: wind_gust,
+        };
+      }
+    );
   }
 
   static getIconUrl(icon: string): string {

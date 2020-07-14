@@ -64,4 +64,10 @@ export class LocationSearchComponent implements OnInit {
       switchMap((query) => this.geocoder.getSuggestions(query))
     );
   }
+
+  getPosition(): void {
+    navigator.geolocation.getCurrentPosition(pos => {
+      this.locationSelected.emit(pos.coords);
+    });
+  }
 }
