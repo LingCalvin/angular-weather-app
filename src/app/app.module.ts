@@ -27,11 +27,12 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { CurrentWeatherComponent } from './current-weather/current-weather.component';
 import { MatCardModule } from '@angular/material/card';
 import { TemperaturePipe } from './temperature.pipe';
-import { ConvertTemperaturePipe } from './convert-temperature.pipe';
 import { HourlyForecastComponent } from './hourly-forecast/hourly-forecast.component';
 import { WeatherTileComponent } from './weather-tile/weather-tile.component';
 import { DailyForecastComponent } from './daily-forecast/daily-forecast.component';
 import { MatExpansionModule } from '@angular/material/expansion';
+import { SpeedPipe } from './speed.pipe';
+import { PressurePipe } from './pressure.pipe';
 
 @NgModule({
   declarations: [
@@ -44,10 +45,11 @@ import { MatExpansionModule } from '@angular/material/expansion';
     SecondaryToolbarComponent,
     CurrentWeatherComponent,
     TemperaturePipe,
-    ConvertTemperaturePipe,
     HourlyForecastComponent,
     WeatherTileComponent,
     DailyForecastComponent,
+    SpeedPipe,
+    PressurePipe,
   ],
   imports: [
     BrowserModule,
