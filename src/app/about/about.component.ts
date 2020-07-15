@@ -17,7 +17,7 @@ export class AboutComponent implements OnInit {
   licenses!: Observable<string>;
 
   getLicenses(): void {
-    this.licenses = this.http.get('/3rdpartylicenses.txt', {
+    this.licenses = this.http.get('./3rdpartylicenses.txt', {
       responseType: 'text',
     });
   }
