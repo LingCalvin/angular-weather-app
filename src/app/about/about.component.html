@@ -1,12 +1,23 @@
 <app-secondary-toolbar [title]="'About'"></app-secondary-toolbar>
-<div class="content">
-  <div class="about">
-    <img src="assets/icons/favicon.svg">
-    <p class="application-name">Weather</p>
-    <p>{{appVersion}}</p>
-    <p>Copyright &copy; 2020 Calvin Ling</p>
-    <p>Distributed under <a
-        href="https://www.gnu.org/licenses/gpl-3.0.html">GPL-3.0-or-later</a>.
-    </p>
+<div class="horizontal-centering-wrapper">
+  <div class="content">
+    <div class="about">
+      <img src="assets/icons/favicon.svg">
+      <p class="application-name">Weather</p>
+      <p>{{appVersion}}</p>
+      <p>Copyright &copy; 2020 Calvin Ling</p>
+      <p>Distributed under <a
+          href="https://www.gnu.org/licenses/gpl-3.0.html">GPL-3.0-or-later</a>.
+      </p>
+    </div>
+    <details>
+      <summary>Third-Party Licenses</summary>
+      <mat-card>
+        <pre class="licenses">
+<!--   -->{{licenses | async}}<!-- Comment at front prevents leading indent -->
+        </pre>
+      </mat-card>
+
+    </details>
   </div>
 </div>
